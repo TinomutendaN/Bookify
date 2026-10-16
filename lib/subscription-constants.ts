@@ -15,7 +15,7 @@ export interface PlanLimits {
 
 export const PLAN_LIMITS: Record<PlanType, PlanLimits> = {
     [PLANS.FREE]: {
-        maxBooks: 1,
+        maxBooks: 5, // TODO: raised for testing, set back to 1 before launch
         maxSessionsPerMonth: 5,
         maxDurationPerSession: 5,
         hasSessionHistory: false,
